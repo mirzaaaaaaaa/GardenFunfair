@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="webMasterpage.master.cs" Inherits="GardenFunfair.webMasterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="background-color:lightgoldenrodyellow;">
+    <form id="form1" runat="server">
+        <div>
+            <center>
+                <asp:Label ID="Label1" runat="server" Text="WELCOME TO GARDEN PARTY FUNFAIR ! "
+                    BackColor="#99CC00" Font-Bold="True" Font-Size="XX-Large" ForeColor="Black" BorderColor="#003300" BorderStyle="Solid" BorderWidth="3px" Font-Strikeout="False" Height="41px" Width="668px"></asp:Label>
+                <br />
+                <table class="auto-style1">
+                    <tr>
+                        <td>
+                <asp:Button ID="Btnhome" runat="server" Text="HOME" BackColor="#FFCC66" BorderColor="#CC6600" BorderStyle="Ridge" BorderWidth="3px" ForeColor="Black" Height="36px" Width="72px" PostBackUrl="~/home.aspx"/>
+                        </td>
+                        <td>
+                <asp:Button ID="Btnfamily" runat="server" Text="FAMILY" BackColor="#FFCC66" BorderColor="#CC6600" BorderStyle="Ridge" BorderWidth="3px" ForeColor="Black" Height="36px" Width="79px" PostBackUrl="~/family.aspx" /> 
+                        </td>
+                        <td> 
+                <asp:Button ID="Btnkids" runat="server" Text="KIDS" BackColor="#FFCC66" BorderColor="#CC6600" BorderStyle="Ridge" BorderWidth="3px" ForeColor="Black" Height="36px" Width="57px" style="margin-left: 0px"/> 
+                        </td>
+                        <td> 
+                <asp:Button ID="Btnthrill" runat="server" Text="THRILL" BackColor="#FFCC66" BorderColor="#CC6600" BorderStyle="Ridge" BorderWidth="3px" ForeColor="Black" Height="36px" Width="77px"/>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <br />
+            </center>
+           
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <center>
+            <asp:Label ID="Label2" runat="server" Text="PLEASE RATE US ! "
+                    BackColor="#CC9900" Font-Bold="True" Font-Size="XX-Large" ForeColor="Black" BorderColor="#003300" BorderStyle="Solid" BorderWidth="3px" Font-Strikeout="False" Height="41px" Width="668px"></asp:Label>
+                </center>
+
+        </div>
+    </form>
+    <p>
+        Copyright : otai masih berbisa yeahhh</p>
+</body>
+</html>
